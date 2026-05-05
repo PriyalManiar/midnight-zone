@@ -1,0 +1,2 @@
+method,ate_estimate,std_error,p_value,ci_lower,ci_upper,true_ate,parallel_trends_slope,parallel_trends_pval
+TWFE DiD,5.803397100499309,0.04818671392773377,0.0,5.708952876667616,5.897841324331002,-0.35,0.0030609522081691777,0.10510349945818465

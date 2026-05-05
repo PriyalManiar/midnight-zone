@@ -1,0 +1,16 @@
+name: 'midnight_zone'
+version: '1.0.0'
+config-version: 2
+
+profile: 'midnight_zone'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  midnight_zone:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

@@ -1,0 +1,7 @@
+midnight_zone:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '../data/midnight_zone.duckdb'
+      threads: 4

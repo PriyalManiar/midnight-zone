@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+data/midnight_zone.duckdb
+dbt_pipeline/target/
+dbt_pipeline/dbt_packages/
+dbt_pipeline/logs/
+outputs/*.png
