@@ -1,0 +1,2 @@
+panel,method,ate_estimate,std_error,p_value,ci_lower,ci_upper,true_ate,parallel_trends_slope,parallel_trends_pval
+sim,TWFE DiD,,,,,,-0.35,0.0003075287406952912,0.5512933865704189
