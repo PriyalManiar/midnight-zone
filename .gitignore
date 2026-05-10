@@ -7,3 +7,10 @@ dbt_pipeline/target/
 dbt_pipeline/dbt_packages/
 dbt_pipeline/logs/
 outputs/*.png
+data/panel_real.csv
+data/panel_sim.csv
+data/ais_raw.csv
+data/ais_weekly.csv
+get-pip.py
+dbt_pipeline/.user.yml
+outputs/*.csv

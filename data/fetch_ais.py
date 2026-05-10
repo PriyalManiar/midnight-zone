@@ -24,14 +24,17 @@ BASE_URL  = "https://gateway.api.globalfishingwatch.org/v3"
 
 # ── Regions ───────────────────────────────────────────────────────────────────
 REGIONS = [
+    # TREATED: High-traffic fishing corridors
     {"name": "english_channel", "treated": 1,
      "lon_min": -5, "lat_min": 48, "lon_max": 2,  "lat_max": 52},
     {"name": "north_sea",       "treated": 1,
      "lon_min": 2,  "lat_min": 52, "lon_max": 8,  "lat_max": 58},
+
+    # CONTROL: Remote Mid-Atlantic (low-traffic)
     {"name": "mid_atlantic_1",  "treated": 0,
-     "lon_min": -40,"lat_min": 35, "lon_max": -30,"lat_max": 40},
+     "lon_min": -40, "lat_min": 35, "lon_max": -30, "lat_max": 40},
     {"name": "mid_atlantic_2",  "treated": 0,
-     "lon_min": -45,"lat_min": 40, "lon_max": -35,"lat_max": 45},
+     "lon_min": -45, "lat_min": 40, "lon_max": -35, "lat_max": 45},
 ]
 
 # Date chunks — API limit is 366 days per request
