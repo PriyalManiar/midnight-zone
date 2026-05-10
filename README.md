@@ -1,9 +1,8 @@
 # Midnight Zone
 ### Causal Impact of Fishing Vessel Noise on Deep-Sea Migration
 
-**Course:** IS 590 — Causal Inference Machine Learning  
+**Course:** IS 590 : Causal Inference Machine Learning  
 **Author:** Priyal Maniar · [priyalmaniar.github.io](https://priyalmaniar.github.io)  
-**GitHub:** [github.com/PriyalManiar/midnight-zone](https://github.com/PriyalManiar/midnight-zone)
 
 ---
 
@@ -43,9 +42,9 @@ Panel B validates that the DML estimator correctly recovers a known true effect 
 
 | Method | Panel A (Real AIS) | Panel B (Simulated) |
 |--------|-------------------|---------------------|
-| True ATE (DGP) | -0.3500 | -0.3500 |
-| TWFE DiD | +0.037 (confounded) | NaN (multicollinearity) |
-| LinearDML ATE | -0.3489 | -0.3460 |
+| True ATE (DGP) | - 0.3500 | - 0.3500 |
+| TWFE DiD | + 0.037 (confounded) | NaN (multicollinearity) |
+| LinearDML ATE | - 0.3489 | -0.3460 |
 | Recovery error | 0.32% | 1.13% |
 | Parallel trends | p = 0.913 (PASS) | p = 0.551 (PASS) |
 | DoWhy refutations | 3 / 3 PASS | 3 / 3 PASS |
@@ -61,7 +60,7 @@ Panel B validates that the DML estimator correctly recovers a known true effect 
 | Source | Records | Coverage | Role |
 |--------|---------|----------|------|
 | Global Fishing Watch API (public-global-fishing-effort) | 174,026 | 2018-2020 Q2 | Real treatment variable |
-| Simulated DVM amplitude | 118,221 cell-month obs | 2018-2020 Q2 | Outcome (known DGP, TRUE_ATE = -0.35) |
+| Simulated DVM amplitude | 118,221 cell-month obs | 2018-2020 Q2 | Outcome (known DGP, TRUE_ATE = - 0.35) |
 | NOAA OISST (parameterised) | Per cell-month | 2018-2020 Q2 | SST confounder |
 
 **Geographic regions:**
@@ -162,18 +161,18 @@ Register at [globalfishingwatch.org/our-apis](https://globalfishingwatch.org/our
 GFW_TOKEN = "your_token_here"
 ```
 
-The free tier gives access to `public-global-fishing-effort` — sufficient for this project.
+The free tier gives access to `public-global-fishing-effort` : sufficient for this project.
 
 ---
 
 ## Limitations
 
-1. **Parallel trends** — another 2020 shock could confound; untestable in the post-period
-2. **Geographic dissimilarity** — European shelf vs deep Mid-Atlantic; parallel trends rests on statistical evidence alone
-3. **Fishing vessels only** — GFW free tier excludes cargo/tanker traffic, the primary URN sources
-4. **Simulated DVM outcome** — recovery error validates on DGP, not real acoustic backscatter
-5. **SUTVA violation** — acoustic spillover from treated to adjacent control cells
-6. **Spatial aggregation** — 0.5-degree grid loses within-cell heterogeneity
+1. **Parallel trends** : another 2020 shock could confound; untestable in the post-period
+2. **Geographic dissimilarity** : European shelf vs deep Mid-Atlantic; parallel trends rests on statistical evidence alone
+3. **Fishing vessels only** : GFW free tier excludes cargo/tanker traffic, the primary URN sources
+4. **Simulated DVM outcome** : recovery error validates on DGP, not real acoustic backscatter
+5. **SUTVA violation** : acoustic spillover from treated to adjacent control cells
+6. **Spatial aggregation** : 0.5-degree grid loses within-cell heterogeneity
 
 ---
 
