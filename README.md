@@ -34,7 +34,7 @@ Panel B validates that the DML estimator correctly recovers a known true effect 
 | Validation | 3 DoWhy refutation tests | DoWhy | Placebo, random cause, data subset |
 | Extension | CausalForestDML | EconML | Heterogeneous effects by depth zone |
 | Pipeline | DuckDB + dbt | dbt-duckdb | Staging and mart transformation layer |
-| Frontend | 6-page interactive dashboard | Streamlit + Plotly | Panel toggle, hover charts, results |
+| Frontend | Interactive dashboard | Streamlit + Plotly | Panel toggle, charts, results |
 
 ---
 
