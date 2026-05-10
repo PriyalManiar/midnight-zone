@@ -6,15 +6,15 @@
 
 ---
 
-## The causal claim
+## Causal Claim
 
 > COVID-19 disrupted commercial fishing vessel activity in the English Channel and North Sea, causing a measurable recovery in diel vertical migration (DVM) amplitude in those corridors relative to remote Mid-Atlantic control corridors where fishing effort was not comparably disrupted.
 
-**Diel vertical migration (DVM)** is the largest daily animal migration on Earth by biomass. Mesopelagic organisms drive the biological carbon pump that sequesters CO2 in the deep ocean. Underwater radiated noise from vessel traffic suppresses DVM — but traditional ecological studies cannot isolate this from seasonal variation. This project uses COVID-19 as a natural experiment.
+**Diel Vertical Migration (DVM)** is the largest daily animal migration on Earth by biomass. Mesopelagic organisms drive the biological carbon pump that sequesters CO2 in the deep ocean. Underwater radiated noise from vessel traffic suppresses DVM — but traditional ecological studies cannot isolate this from seasonal variation. This project uses COVID-19 as a natural experiment.
 
 ---
 
-## Dual panel design
+## Dual Panel Design
 
 | Panel | Treatment variable | COVID signal | Purpose |
 |-------|-------------------|-------------|---------|
@@ -25,7 +25,7 @@ Panel B validates that the DML estimator correctly recovers a known true effect 
 
 ---
 
-## Method stack
+## Method Stack
 
 | Layer | Method | Tool | Purpose |
 |-------|--------|------|---------|
@@ -38,7 +38,7 @@ Panel B validates that the DML estimator correctly recovers a known true effect 
 
 ---
 
-## Key results
+## Key Results
 
 | Method | Panel A (Real AIS) | Panel B (Simulated) |
 |--------|-------------------|---------------------|
@@ -63,7 +63,7 @@ Panel B validates that the DML estimator correctly recovers a known true effect 
 | Simulated DVM amplitude | 118,221 cell-month obs | 2018-2020 Q2 | Outcome (known DGP, TRUE_ATE = - 0.35) |
 | NOAA OISST (parameterised) | Per cell-month | 2018-2020 Q2 | SST confounder |
 
-**Geographic regions:**
+**Geographic Regions:**
 
 | Region | Type | Bathymetry | Rationale |
 |--------|------|-----------|-----------|
@@ -76,7 +76,7 @@ Panel B validates that the DML estimator correctly recovers a known true effect 
 
 ---
 
-## Project structure
+## Project Structure
 
 ```
 midnight_zone/
@@ -104,7 +104,7 @@ midnight_zone/
 
 ---
 
-## Setup and run
+## Setup and Run
 
 ```bash
 # 1. Clone
@@ -153,7 +153,7 @@ streamlit run app/streamlit_app.py
 
 ---
 
-## GFW API token
+## GFW API Token
 
 Register at [globalfishingwatch.org/our-apis](https://globalfishingwatch.org/our-apis) for a free API token. Add it to `data/fetch_ais.py`:
 
@@ -176,6 +176,6 @@ The free tier gives access to `public-global-fishing-effort` : sufficient for th
 
 ---
 
-## Tech stack
+## Tech Stack
 
 `Python 3.13` · `DuckDB` · `dbt-duckdb` · `EconML` · `DoWhy` · `statsmodels` · `scikit-learn` · `Streamlit` · `Plotly` · `GFW API v3` · `pandas` · `numpy`
