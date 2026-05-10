@@ -1,7 +1,6 @@
 # Causal Impact of Fishing Vessel Noise on Deep-Sea Migration 
 
-**Course:** IS 590 : Causal Inference Machine Learning  
-**Author:** Priyal Maniar 
+**Course:** IS 590 : Causal Inference Machine Learning 
 
 ---
 
